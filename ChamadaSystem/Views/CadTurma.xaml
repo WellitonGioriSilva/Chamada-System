@@ -1,0 +1,23 @@
+﻿<Page x:Class="ChamadaSystem.Views.CadTurma"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:ChamadaSystem.Views"
+      mc:Ignorable="d" d:DesignWidth="646"
+      Title="CadTurma" Height="423">
+
+    <Grid Background="White">
+        <Label Content="CADASTRAR TURMA" HorizontalAlignment="Center" Margin="0,10,0,0" VerticalAlignment="Top" Foreground="#FF3C9737" FontFamily="Bahnschrift" FontSize="22" FontWeight="Bold"/>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,-175,0,0">
+            <Label Content="Curso:" Foreground="#FF3C9737" FontFamily="Bahnschrift" FontSize="14" Width="58" HorizontalContentAlignment="Center" Height="25" VerticalAlignment="Center"/>
+            <TextBox x:Name="tbCurso" HorizontalAlignment="Center" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="364" CaretBrush="#FF3C9737" SelectionBrush="#FFA0EF9B" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        </StackPanel>
+
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,0,0">
+            <Label Content="Período:" Foreground="#FF3C9737" FontFamily="Bahnschrift" FontSize="14" Width="58" HorizontalContentAlignment="Center" Height="25" VerticalAlignment="Center"/>
+            <TextBox x:Name="tbPeriodo" HorizontalAlignment="Center" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="364" CaretBrush="#FF3C9737" SelectionBrush="#FFA0EF9B" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        </StackPanel>
+        <Button x:Name="btSalvar" Content="Salvar" HorizontalAlignment="Center" Margin="0,353,0,0" VerticalAlignment="Top" Background="#FF3C9737" BorderBrush="#FF3C9737" Width="206" Click="btSalvar_Click"/>
+    </Grid>
+</Page>
